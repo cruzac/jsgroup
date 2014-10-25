@@ -1,0 +1,82 @@
+#game_frame {
+	width: 993px;
+	height: 600px; /*550*/
+	margin-top: 3px;
+}
+
+#game_board_frame {
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 750px;
+	height: 500px;
+	position: absolute;
+	left: 220px;
+	padding: 5px;
+
+	
+}
+
+div.card_frame {
+	width: 114px;
+	height: 114px;
+	display: inline;
+	margin-left: 3px;
+}
+
+div.card_frame img {
+	border: 2px solid #33CCCC;
+	border-radius: 100%;
+}
+
+div.card_frame a:hover img {
+	border: 2px solid #3333FF;
+}
+
+div.game_board_spacer {
+	height: 3px;
+	width: 100%;
+}
+
+#game_info_frame {
+	position: absolute;
+	width: 170px;
+	height: 430px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+div.player_frame, #addPlayer {
+	width: 160px;
+	height: 90px;
+	visibility: visible;
+	margin-top: 10px;
+	padding: 3px;
+}
+
+#control_frame {
+	position: absolute;
+	width: 170px;
+	height: 60px;
+	top: 500px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+#control_frame button {
+	width: 80px;
+	height: 30px;
+	font-size: 16px;
+	font-family: Helvetica,Arial,sans-serif;
+	margin-top: 20px;
+}
+
+#clock div{
+	display:inline;
+}
+
+ul#sortable{
+	 margin: 0;
+	 padding-left: 0;
+}

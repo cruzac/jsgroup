@@ -1,0 +1,62 @@
+<!doctype html>
+<html> 
+	<head> 
+		<meta charset="utf-8" />
+		<script language="JavaScript">
+			function CoffeePreview(sel) {
+				document.getElementById('preview').src = "" + sel.options[sel.selectedIndex].value;
+			}
+//  End -->
+		</script>
+	</head> 
+	
+	<body> <!--Now below is the place where the code goes in.--> <!-- Type the code here --> 
+		<center>
+		<script type="text/javascript">
+			function sound(){
+				var sound = new Audio("Scream.mp3");
+				sound.play();
+			}
+		</script>
+		
+		<script type="text/javascript">
+        $(document).ready(function() {
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', 'Scream.mp3');
+            audioElement.setAttribute('autoplay', 'autoplay');
+            //audioElement.load()
+
+            $.get();
+
+            audioElement.addEventListener("load", function() {
+                audioElement.play();
+            }, true);
+
+            $('.play').click(function() {
+                audioElement.play();
+            });
+
+            $('.pause').click(function() {
+                audioElement.pause();
+            });
+        });
+    </script>
+<form name=previewselect>
+<select name=selbox size=1 onChange="CoffeePreview(this)">
+<option value="witch.gif" name="track1" src="witch.gif" id="track1" alt="" class="play">Image #1
+<option value="http://www.javascriptfreecode.com/images/ci_2-small.jpg">Image #2
+<option value="http://www.javascriptfreecode.com/images/ci_3-small.jpg">Image #3
+<option value="http://www.javascriptfreecode.com/images/ci_4-small.jpg">Image #4
+<option value="http://www.javascriptfreecode.com/images/ci_5-small.jpg">Image #5
+<option value="http://www.javascriptfreecode.com/images/ci_6-small.jpg">Image #6
+</select>
+<p>
+<img name="preview" id='preview' src="witch.gif" width=150 height=113 border=1>
+<p>
+</form>
+</center>
+
+<font face="Tahoma"><a target="_blank" href="http://www.javascriptfreecode.com/"><span style="font-size: 8pt; text-decoration: none">JavaScript Free Code</span></a></font>
+		</script>
+	</body> 
+</html>

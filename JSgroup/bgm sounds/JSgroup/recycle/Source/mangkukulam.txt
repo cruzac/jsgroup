@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<title>PH's Supernaturals</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<link href="temp.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+		<script src="witch.js"></script>
+	</head>
+
+	<!--<body onload="welcomeUser()">-->
+	<body>
+		<script type = "text/javascript">
+			//function welcomeUser(){
+				//var person = prompt("Hi Guest! Please enter your name");
+				//var sound = new Audio("Scream.mp3");
+				//if (person != null){
+				//	sound.play();
+				//	confirm("Hello " + person + "! Welcome to our website! Enjoy and don't get too scared!");
+				//} else {
+					//sound.play();
+				//}
+			//}
+		</script>
+		<!--<div id = "image"></div>-->
+		
+		<div id="wrapper">
+		<div class='witch' id='witch1'></div>
+			<div id="header-wrapper">
+				<div id="header">
+					<div id="logo">
+						<img style="margin-left:-300px;"src="logo5.png" height="300" width="1550">
+						
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="home.html" style="background: #FFFFFF; color: #F44C31;">MYTHICAL CREATURES</a>
+					</li>
+					<li><a href="ghost.html">GHOSTS</a></li>
+					<li><a href="ladies.html">HORROR LADIES</a></li>
+					<li><a href="memory.html">GAMES</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>
+			<!-- end #menu -->
+			<div id="page">
+				<div class="h1"><h1 style="text-align:center; color:red;">Mythical Creatures in the Philippines</h1></h1>
+				<hr size="2" width="50%"></hr>
+				<div id="page-bgtop">
+					<div id="page-bgbtm">
+						<div id="content">
+							<h1 class="title" style="color:red;">Mangkukulam</h1>
+							<div class="entry">							
+								<script type="text/javascript">
+									witchImg = document.getElementById("witch1");
+									//document.write("<div class='witch' id='witch1'></div>");
+									witchImg.style.backgroundImage = "url('"+witch1.imageLink+"')";
+													
+									moveWitch();
+									
+									function moveWitch(){
+										var randY = Math.floor(Math.random()*1);
+										var randX = Math.floor(Math.random()*1);
+										
+										switch(witch1.facing){
+											case FACE_DIR.LEFT:
+												if(randX > witch1.position.x){
+													console.log("from " + witch1.position.x + " to " + randX);
+													console.log("switch to right");
+													witch1.facing = FACE_DIR.RIGHT;
+													witchImg.style.transform = "rotate-left(360deg)";
+												}
+												break;
+											case FACE_DIR.RIGHT:
+												if(randX < witch1.position.x){
+													console.log("to " + witch1.position.x + " from " + randX);
+													console.log("switch to left");
+													witch1.facing = FACE_DIR.LEFT;
+													witchImg.style.transform = "rotate(360deg)";
+												}
+												break;
+											}
+
+										witch1.position.x = randX;
+										witch1.position.y = randY;
+
+										witchImg.style.marginTop = (randY) + "%";
+										witchImg.style.marginRight = (64 - randX) + "%";
+										setTimeout("moveWitch()",1000);
+									}
+								</script>
+								
+								
+							<blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mangkukulam or bruha (from Spanish: bruja, "witch") are witches, wizards, bruho (Spanish:brujo, "wizard, male witch"), or sorcerers who cast evil spells to humans. This bewitcher is also called manggagaway. </p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They are witches that cast evil spells to cause harm to human and/or plagues. They use a doll (Booddoo Doll) with a hair strand on it then cast spells to for a curse.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Mangkukulam (/mahng-khu-khu-lam/) is the Filipino version of witch or sorcerer, the name deriving from the word kulam. Other terms are brujo ('bruho' for warlocks) and bruja ('bruha' for witches ), which are from the Spanish language. The verb kulamin (/koo-lah-min/) means "to place a hex". And a curse in Filipino is a sumpa (/soom-pah/).</p></blockquote>
+							<h2>Appearance</h2>
+							<blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Superstitious folks still attribute certain illnesses or diseases to kulam. This most often happens in the provinces, where an herbal doctor, albularyo (/al-boo-lar-yoh/), treats them. In some rural provincial areas, people completely rely on the albularyo for treatment.</p></blockquote>
+							<h2>Capabilities</h2>
+							<blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The mangkukulam recites spells and mixes potions. Modern influences have transformed popular perception so that the mangkukulam now also uses the equivalent of a doll. The mangkukulam'scurses is mitigated by finding him/her and giving bribes.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Mangkukulam uses dark magic.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The difference between a mambabarang and a mangkukulam is that the mambabarang uses magical insects to bring harm to his victims. These insects are released after incantations, when they will search for their supposed victim and burrow under the skin, impregnating her. After some time, matruculans return to the house to kill the pregnant mother, open her abdomen, and eat the growing fetus.</p>
+							</blockquote>
+							</div>	
+							<div style="clear: both;">&nbsp;</div>
+						</div>
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		<hr size="2" width="100%"></hr>
+			<p>Copyright (c) 2014 supernaturals.com | All rights reserved. | Design by JS Group</a>.</p>
+		</div>
+	</body>
+</html>	

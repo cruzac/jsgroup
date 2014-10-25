@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<title>PH's Supernaturals</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<link href="temp.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+		<script type="text/javascript" src="Image-Slider-Pager.js"></script>
+		<link rel="stylesheet" type="text/css" href="Image-Slider-Pager.css">
+	</head>
+
+	<!--<body onload="welcomeUser()">-->
+	<body onload="startUpPosition(100,100);">
+		<script type = "text/javascript">
+			//function welcomeUser(){
+				//var person = prompt("Hi Guest! Please enter your name");
+				//var sound = new Audio("Scream.mp3");
+				//if (person != null){
+				//	sound.play();
+				//	confirm("Hello " + person + "! Welcome to our website! Enjoy and don't get too scared!");
+				//} else {
+					//sound.play();
+				//}
+			//}
+		</script>
+		<!--<div id = "image"></div>-->
+		
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div id="header">
+					<div id="logo">
+						<div class='witch' id='witch1'></div>
+						<img style="margin-left:-300px;"src="logo5.png" height="300" width="1550">
+						
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="home.html" style="background: #FFFFFF; color: #F44C31;">MYTHICAL CREATURES</a>
+					</li>
+					<li><a href="ghost.html">GHOSTS</a></li>
+					<li><a href="memory.html">HORROR GAMES</a></li>
+				</ul>
+			</div>
+			<!-- end #menu -->
+			<div id="page">
+				<div class="h1"><h1 style="text-align:center;">Mythical Creatures in the Philippines</h1></h1>
+				<hr size="2" width="50%"></hr>
+				<div id="page-bgtop">
+					<div id="page-bgbtm">
+						<div id="content">
+								<div class="entry">
+								
+								<script type="text/javascript">
+									witchImg = document.getElementById("witch1");
+									//document.write("<div class='witch' id='witch1'></div>");
+									witchImg.style.backgroundImage = "url('"+witch1.imageLink+"')";
+									
+									moveWitch();
+									
+									function moveWitch(){
+										var randY = Math.floor(Math.random()*8);
+										var randX = Math.floor(Math.random()*5);
+										
+										switch(witch1.facing){
+											case FACE_DIR.LEFT:
+												if(randX > witch1.position.x){
+													console.log("from " + witch1.position.x + " to " + randX);
+													console.log("switch to right");
+													witch1.facing = FACE_DIR.RIGHT;
+													witchImg.style.transform = "rotate-left(360deg)";
+												}
+												break;
+											case FACE_DIR.RIGHT:
+												if(randX < witch1.position.x){
+													console.log("to " + witch1.position.x + " from " + randX);
+													console.log("switch to left");
+													witch1.facing = FACE_DIR.LEFT;
+													witchImg.style.transform = "rotate(360deg)";
+												}
+												break;
+											}
+
+										witch1.position.x = randX;
+										witch1.position.y = randY;
+
+										witchImg.style.marginTop = randY+"%";
+										witchImg.style.marginLeft = randX+"%";
+										setTimeout("moveWitch()",1000);
+									}
+								</script>
+									<div class="container">
+			<div class="slider_wrapper">
+				<ul id="image_slider">
+					<li><img src="MC/c1.jpg"></li>
+					<li><img src="MC/c2.jpg"></li>
+					<li><img src="MC/c3.jpg"></li>
+					<li><img src="MC/c4.jpg"></li>
+					<!-- <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/4.jpg"></li> -->
+					<!-- <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/5.jpg"></li> -->
+				</ul>					
+				<span class="nvgt" id="prev"></span>
+				<span class="nvgt" id="next"></span>		
+			</div>
+			<ul id="pager">
+			</ul>
+		</div>
+								</div>
+							<div style="clear: both;">&nbsp;</div>
+						</div>
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		<hr size="2" width="100%"></hr>
+			<p>Copyright (c) 2014 supernaturals.com | All rights reserved. | Design by JS Group</a>.</p>
+		</div>
+	</body>
+</html>	

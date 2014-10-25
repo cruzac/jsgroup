@@ -1,0 +1,11 @@
+sa memory.html..
+
+tapos, yung list nung pictures na isasama sa memory game, yung nilagay ko na mLists.html, nasa MC na folder ung pictures
+
+tapos pala, wala na ung add ng player, pwedeng may button nalang sa gitna nung page, na: START/BEGIN
+
+tapos tsaka lalabas yung memory game. 
+
+pag nakatalikod ung picture, ung gamitin mo, yung image.jpg
+
+Tapos, rofiles, paki ayos naman din ung witch. haha thanks

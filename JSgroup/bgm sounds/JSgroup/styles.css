@@ -1,0 +1,56 @@
+/*memory*/
+div#memory_board{
+	background:gray;
+	width:850px;
+	height:540px;
+}
+
+div#memory_board > div{
+	background: url(image.jpg) no-repeat;
+	width:110px;
+	height:110px;
+	float:left;
+	padding:10px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
+
+/*image*/
+
+
+/*witch*/
+
+div.witch{
+	width: 200px;
+	height: 200px;
+	transition:margin 5.0s linear 0s;
+	position:absolute;
+	background:no-repeat;
+				/*transform: rotateY(180deg);*/				
+}
+
+/*a*/
+a {
+	color:violet;
+	font-size:30px;
+	text-decoration:underline;
+}
+
+.titleM{
+	font-family:tahoma;
+	text-decoration:ultra-expanded;
+	color:white;
+	font-size:30px;
+	font-weight:bold;
+}
+
+a:hover {
+	text-decoration:none;
+	background-color:black;
+	cursor:pointer;
+	font-size:30px;
+	font-weight:bold;
+	color:red;
+	text-align:center;
+}

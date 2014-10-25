@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<title>PH's Supernaturals</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<link href="temp.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+
+	<script type = "text/javascript">
+		function play(){
+			var sound = new Audio("ghost.mp3");
+			sound.play();
+		}
+			//function welcomeUser(){
+				//var person = prompt("Hi Guest! Please enter your name");
+				//var sound = new Audio("Scream.mp3");
+				//if (person != null){
+				//	sound.play();
+				//	confirm("Hello " + person + "! Welcome to our website! Enjoy and don't get too scared!");
+				//} else {
+					//sound.play();
+				//}
+			//}
+	</script>
+	<body>
+		<script type="text/javascript">
+			play();
+		</script>
+		<script type = "text/javascript">
+			//function welcomeUser(){
+				//var person = prompt("Hi Guest! Please enter your name");
+				//var sound = new Audio("Scream.mp3");
+				//if (person != null){
+				//	sound.play();
+				//	confirm("Hello " + person + "! Welcome to our website! Enjoy and don't get too scared!");
+				//} else {
+					//sound.play();
+				//}
+			//}
+		</script>
+		<!--<div id = "image"></div>-->
+		
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div id="header">
+					<div id="logo">
+						<div class='witch' id='witch1'></div>
+						<img style="margin-left:-300px;"src="logo5.png" height="300" width="1550">
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="home-s.html">MYTHICAL CREATURES</a>
+					</li>
+					<li><a href="ghost.html">GHOSTS</a></li>
+					<li><a href="ladies.html">HORROR LADIES</a></li>
+					<li><a href="memory.html" style="background: #FFFFFF; color: #F44C31;">GAMES</a></li>
+					<li><a href="horrorstories.html">STORIES</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>
+			<!-- end #menu -->
+			<h1 style="text-align:center; color:red;">Memory Game</h1>
+			<hr size="2" width="50%"></hr>
+			<div id="page">
+				<div id="page-bgtop">
+					<div id="page-bgbtm">
+						<div id="content">
+								<div class="entry" style="margin-left:25%;">
+									<script src="memory/memory/memory.js"></script>
+									<link rel="stylesheet" type="text/css" href="memory/memory/memory.css">
+									<div id="memory_board"></div>
+									<script>newBoard();</script>
+								</div>
+							<div style="clear: both;">&nbsp;</div>
+						</div>
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		<hr size="2" width="100%"></hr>
+			<p>Copyright (c) 2014 supernaturals.com | All rights reserved. | Design by JS Group</a>.</p>
+		</div>
+	</body>
+</html>	
